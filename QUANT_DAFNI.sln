@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QUANT_DAFNI", "QUANT_DAFNI\QUANT_DAFNI.csproj", "{3F9FFE1E-EF5B-422F-ABA1-D570AD4F8C43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F9FFE1E-EF5B-422F-ABA1-D570AD4F8C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9FFE1E-EF5B-422F-ABA1-D570AD4F8C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9FFE1E-EF5B-422F-ABA1-D570AD4F8C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9FFE1E-EF5B-422F-ABA1-D570AD4F8C43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFB61940-AF7F-4225-99E5-5D54F7AB1CA3}
+	EndGlobalSection
+EndGlobal

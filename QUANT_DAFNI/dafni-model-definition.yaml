@@ -1,0 +1,100 @@
+﻿kind: Model
+apiVersion: v1alpha5
+metadata:
+  displayName: QUANT2
+  name: QUANT2
+  summary: The QUANT2 Spatial Interaction Model
+  description: >
+    The QUANT2 spatial interaction model for England, Scotland and Wales.
+
+    More to go here...
+  type: LUTI
+spec:
+  inputs:
+    env:
+      - name: Q2_OpCode
+        title: Operation code for QUANT
+        description: Tells QUANT what operation to perform - not currently implemented - it always calibrates for now - this is going to be a string
+        type: integer
+        default: 0
+        min: 0
+        max: 10
+        required: true
+    dataslots:
+      - name: TObs_1.bin
+        description: >
+          TObs_1.bin
+        default:
+          #TObs_1
+          - uid: 46f38783-6e27-434a-9b93-c212c9536e68
+            versionUid: 61ba53be-42c4-40de-88fe-326d115f0f5d
+        path: inputs/model-runs/TObs_1.bin
+        required: true
+      - name: TObs_2.bin
+        description: >
+          TObs_2.bin
+        default:
+          #TObs_2
+          - uid: d7056f27-d612-46ed-b09d-b213dcb51c9b
+            versionUid: a9e9e88d-b422-4d5a-a454-8abf56587c98
+        path: inputs/model-runs/TObs_2.bin
+        required: true
+      - name: TObs_3.bin
+        description: >
+          TObs_3.bin
+        default:
+          #TObs_3
+          - uid: eaf07596-f711-42b9-9484-d04d0f112c60
+            versionUid: 9d9d20cc-d901-494f-8ae6-46a045f284f9
+        path: inputs/model-runs/TObs_3.bin
+        required: true
+      - name: dis_roads_min.bin
+        description: >
+          dis_roads_min.bin
+        default:
+          #dis1 road
+          - uid: 37cc301e-53d2-4612-92b3-1b1d963625cb
+            versionUid: 0faecc27-7974-4d97-b11b-5a661ba5322d
+        path: inputs/model-runs/dis_roads_min.bin
+        required: true
+      - name: dis_bus_min.bin
+        description: >
+          dis_bus_min.bin
+        default:
+          #dis2 bus
+          - uid: cf5e2379-81f8-4da0-994c-ebd4da9cc2ec
+            versionUid: 072ead5b-2c5b-4877-b2cf-d61f6acef73e
+        path: inputs/model-runs/dis_bus_min.bin
+        required: true
+      - name: dis_gbrail_min.bin
+        description: >
+          dis_gbrail_min.bin
+        default:
+          #dis3 gbrail
+          - uid: 8b26f0f3-4225-440c-a102-721ac7b671e8
+            versionUid: 0c9a8a60-4ecd-4893-bb92-2bdac180e820
+        path: inputs/model-runs/dis_gbrail_min.bin
+        required: true
+      - name: ZoneCodes.bin
+        description: >
+          ZoneCodes.bin
+        default:
+          #zonecodes
+          - uid: 7b64c6ad-f533-469e-855d-c47d656055a9
+            versionUid: d5faa9b9-8a4a-421c-a0bd-cd279ab2aa68
+        path: inputs/model-runs/ZoneCodes.bin
+        required: true
+      - name: GreenBeltConstraints.bin
+        description: >
+          GreenBeltConstraints.bin
+        default:
+          #green belt
+          - uid: d908e1be-e306-4db6-ac98-9fc3d78c1260
+            versionUid: 6c666dc1-5157-4ecf-9dfa-c4b6cec54589
+        path: inputs/model-runs/GreenBeltConstraints.bin
+        required: true
+  outputs:
+    datasets:
+      - name: files.txt
+        type: txt
+        description: just a list of files for debugging

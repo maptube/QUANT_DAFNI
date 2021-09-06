@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "QUANT_DAFNI": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "environmentVariables": {
+        "Q2_OpCode": "CALIBRATE"
+      }
+    }
+  }
+}

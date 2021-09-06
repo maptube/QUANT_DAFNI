@@ -1,0 +1,22 @@
+﻿kind: Model
+apiVersion: v1alpha5
+metadata:
+  displayName: QUANT2
+  name: QUANT2
+  summary: The QUANT2 Spatial Interaction Model
+  description: >
+    The QUANT2 spatial interaction model for England, Scotland and Wales.
+
+    More to go here...
+  type: LUTI
+spec:
+  inputs:
+    env:
+      - name: Q2_OpCode
+        title: Operation code for QUANT
+        description: Tells QUANT what operation to perform - not currently implemented - it always calibrates for now - this is going to be a string
+        type: integer
+        default: 0
+        min: 0
+        max: 10
+        required: true
